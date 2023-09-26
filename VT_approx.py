@@ -62,20 +62,18 @@ for i in range(1, len(sample)-1):
 
 def linear_region(x,y):
     derivatives = []
-    maxslope = 0
-    maxindex = None
-    for i in range(10, len(x)):
+    for i in range(1, len(x)):
         x1 = x[i-1]
         x2 = x[i]
         y1 = y[i-1]
         y2 = y[i]
         slope = (y2 - y1) / (x2 - x1)
-        if slope > maxslope :
-            maxslope = slope
-            maxindex = i
         derivatives.append(slope)
+   
 
-    return maxindex
+    maxder = derivatives.index(max(derivatives))
+    print
+    return maxder
 
 
 Vt = []
@@ -86,11 +84,11 @@ i = 1
 while i < len(Id): 
     index = linear_region(Id[i], Vgs[i])
     print (index)
-    y1 = np.sqrt(Id[i][index])   # Set the points to the 46th and 47th because there is 91
-    y2 = np.sqrt(Id[i][index + 5])   # points, so this is somwhere in the middle
+    y1 = np.sqrt(Id[i][50])   # Set the points to the 46th and 47th because there is 91
+    y2 = np.sqrt(Id[i][50 + 5])   # points, so this is somwhere in the middle
 
-    x1 = Vgs[i][index - 5]
-    x2 = Vgs[i][index]
+    x1 = Vgs[i][50]
+    x2 = Vgs[i][50 + 5]
 
     Slope = (y2 - y1) / (x2 - x1)
     # y = slope(x - x1) + y1
@@ -102,11 +100,11 @@ while i < len(Id):
     K.append((2*(Slope**2))/((x1-Vt[i-1])**2))
 
     #Finding Lamda line
-    x1 = Vds[index - 1][50]
-    x2 = Vds[index][50]
+    x1 = Vds[i-1][50]
+    x2 = Vds[i][50]
 
-    y1 = Id[index - 1][50]
-    y2 = Id[index][50]
+    y1 = Id[i-1][50]
+    y2 = Id[i][50]
 
     slope = (y2 - y1) / (x2 - x1)
 
