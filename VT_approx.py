@@ -5,7 +5,7 @@ from pprint import pprint
 
 def FormatSample(sample):
     #known variables
-    for i in range(0, len(sample)-1):
+    for i in range(0, len(sample)):
         Id.append([])
         Vgs.append([])
         match sample[i][0]:
@@ -145,11 +145,12 @@ def findVal():
     print("lamda = " + str(lamda))
 
 def plotSample(id, vgs, vds):
+
     # place the legend, given the labels above for each of the lines.
-    for i in range(1, len(vds)-1):
+    for i in range(0, len(vds)):
         #plot Id vs 
-        sqid = np.sqrt(id[i])
-        plt.plot(vgs[i], id[i])
+        label = f'$V_{{GS}}$ = {vds[i]}V'
+        plt.plot(vgs[i-1], id[i-1], label = label)
 
         
     plt.legend(loc="upper left")
@@ -157,20 +158,17 @@ def plotSample(id, vgs, vds):
     # Place labels at x- and y-axis, and title above the plot.
     # Matplotlib can use LaTeX notation for formulas.
     # Braces can be doubled {{}} to escape f-string interpolation
-    plt.xlabel(f'$V_{{DS}}~(V)$')
-    plt.ylabel(f'$I_{{D}}~(mA)$')
-    plt.title(f'$I_D$ as a function of $V_{{GS}}$ for different values of $V_{{DS}}$')
+    plt.title(f'Derivative of $I_D$ over $V_{{DS}}$ for different Vgs')
     
-    plt.savefig("Id" + ".pdf")
 
     # show it on the screen
+    plt.grid(color='gray', linestyle=':', linewidth=0.5)
     plt.show()
 
 
 if __name__ == "__main__":
 
-    in_file = open("EE2C11_labs/sample.json")
-
+    in_file = open("EE2C11_labs\dI(vds)D(vds).json")
     sample = json.loads(in_file.read())
 
     Id = []
