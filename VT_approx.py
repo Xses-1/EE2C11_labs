@@ -77,7 +77,7 @@ def findVal():
     K = []
     K2 = []
     lamarray = []
-    for i in range(1, len(Id)) :
+    for i in range(1, len(Vds)) :
 
         ################################
         #Find the Treshold Voltage
@@ -168,7 +168,7 @@ def plotSample(id, vgs, vds):
 
 if __name__ == "__main__":
 
-    in_file = open("sqrt_Id_Vds.json")
+    in_file = open("EE2C11_labs\I(Vds).json")
     sample = json.loads(in_file.read())
 
     Id = []
@@ -177,5 +177,5 @@ if __name__ == "__main__":
 
     FormatSample(sample)
 
-    plotSample(Id, Vgs, Vds)
+    findVal()
 
