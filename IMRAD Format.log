@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  10 OCT 2023 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  10 OCT 2023 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,35 +855,15 @@ Package lettrine.sty Info: Targeted height = 35.16666pt
 extsf {\textbf {T}}});
 (lettrine.sty)             reported on input line 110.
 
-Underfull \hbox (badness 7851) in paragraph at lines 110--111
-[][][]\OT1/cmr/bx/n/12 (+20) his is where you will in-sert
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 110--111
-\OT1/cmr/bx/n/12 (+20) your ab-stract. Brief sum-mary,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-\OT1/cmr/bx/n/12 (+20) im-por-tant points, in-ter-est-ing
- []
-
-
-Underfull \hbox (badness 7759) in paragraph at lines 110--111
-\OT1/cmr/bx/n/12 (+20) re-sults/developments, meth-ods de-vel-
- []
-
-
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 112.
+ne 113.
 
 
-Package natbib Warning: Citation `Ref1' on page 1 undefined on input line 114.
+Package natbib Warning: Citation `Ref1' on page 1 undefined on input line 115.
 
 
 Underfull \vbox (badness 3281) has occurred while \output is active []
@@ -891,7 +871,7 @@ Underfull \vbox (badness 3281) has occurred while \output is active []
 
 
 LaTeX Font Warning: Font shape `OT1/lmr/c/n' undefined
-(Font)              using `OT1/lmr/m/n' instead on input line 117.
+(Font)              using `OT1/lmr/m/n' instead on input line 118.
 
 [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
 ocal/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/20
@@ -906,7 +886,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 120.
+ne 121.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -914,7 +894,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 131.
+ne 132.
 
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
@@ -924,12 +904,12 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 135.
+ne 136.
 
 <7.png, id=33, 1445.4pt x 813.0375pt>
 File: 7.png Graphic file (type png)
 <use 7.png>
-Package pdftex.def Info: 7.png  used on input line 158.
+Package pdftex.def Info: 7.png  used on input line 159.
 (pdftex.def)             Requested size: 246.58229pt x 138.69838pt.
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -937,28 +917,24 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 163.
+ne 164.
 
 
-Underfull \vbox (badness 1005) has occurred while \output is active []
+Package natbib Warning: Citation `Ref1' on page 3 undefined on input line 174.
 
 
-
-Package natbib Warning: Citation `Ref1' on page 3 undefined on input line 173.
-
-
-Package natbib Warning: Citation `Ref2' on page 3 undefined on input line 173.
+Package natbib Warning: Citation `Ref2' on page 3 undefined on input line 174.
 
 [3 <./7.png>]
 <13.png, id=46, 1445.4pt x 813.0375pt>
 File: 13.png Graphic file (type png)
 <use 13.png>
-Package pdftex.def Info: 13.png  used on input line 178.
+Package pdftex.def Info: 13.png  used on input line 179.
 (pdftex.def)             Requested size: 246.58229pt x 138.69838pt.
 
 
 LaTeX Warning: Reference `Figure 2,Figure 3' on page 4 undefined on input line 
-183.
+184.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -966,7 +942,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 185.
+ne 186.
 
 [4 <./13.png>]
 
@@ -975,7 +951,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 193.
+ne 194.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -983,7 +959,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 197.
+ne 198.
 
 No file "IMRAD Format".bbl.
 
@@ -992,12 +968,12 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 206.
+ne 207.
 
 <catto.png, id=55, 715.67375pt x 715.67375pt>
 File: catto.png Graphic file (type png)
 <use catto.png>
-Package pdftex.def Info: catto.png  used on input line 212.
+Package pdftex.def Info: catto.png  used on input line 213.
 (pdftex.def)             Requested size: 246.58229pt x 246.5801pt.
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -1005,7 +981,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 220.
+ne 221.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1032,11 +1008,11 @@ Package rerunfilecheck Info: File `"IMRAD Format".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19801 strings out of 475237
- 352894 string characters out of 5764559
+ 19799 strings out of 475237
+ 352876 string characters out of 5764559
  1935244 words of memory out of 5000000
  40542 multiletter control sequences out of 15000+600000
- 598682 words of font info for 209 fonts, out of 8000000 for 9000
+ 598623 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,107p,10909b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1051,7 +1027,7 @@ ve/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/tex
 mf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/
 fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fo
 nts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on "IMRAD Format.pdf" (6 pages, 1617495 bytes).
+Output written on "IMRAD Format.pdf" (6 pages, 1618153 bytes).
 PDF statistics:
  129 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream
