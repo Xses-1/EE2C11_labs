@@ -168,7 +168,7 @@ def plotSample(id, vgs, vds):
 
 if __name__ == "__main__":
 
-    in_file = open("EE2C11_labs\dI(vds)D(vds).json")
+    in_file = open("sqrt_Id_Vds.json")
     sample = json.loads(in_file.read())
 
     Id = []
