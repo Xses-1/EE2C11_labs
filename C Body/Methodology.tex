@@ -1,0 +1,49 @@
+\chapter{Intorduction}
+
+The goal of the first courselab of the EE2C11 Integrated Circuits course was to simulate the behavior of a MOS transistor in a 180nm node and then extract the unified model parameters from this simulation, plot them, and compare with the BSIS model that the SPICE simulator uses. The main objective of this assignment was to learn and understand the Unified Model and methods behind transistor modeling within this model.
+
+According to the manual of this courselab <reference> the main educational goals of this assignment were to:
+\begin{itemize}
+        \item understand the behavior of MOS integrated circuits and simple methods of modeling of this behavior;
+        \item practice the process of performing, describing, and analyzing the experiment and its results;
+        \item enhance our report writing and data gathering skills.
+\end{itemize}
+
+While the last objective was achieved mostly through the process of report writing, the first two were achieved through the actual experiment. Its entire process consisted of a few steps.
+
+\begin{itemize}
+        \item Firstly the simulation in LTSpice was performed, chapter  expands on this further
+
+\end{itemize}
+
+\chapter{Methodology}
+
+\section{Simulation}
+Instead of measuring a physical device, to reduce extra variables present in physical devices and make our experiments reliable and repeatable, it was chosen to use the BSIM3 model in LTSpice. This allows us to graph all voltages and currents in relation to each other. This simulation data and the graphs associated with it allow us to perform calculations and experimentally extract the transistor parameters.\\
+
+To define the properties of the transistor we used a script %% Appendix? %% 
+that allowed us to assign numbers with a Gauss random variable with a seed of 5625173. The final values we ended up with are: 
+\begin{itemize}
+    \item $\mu_0 = 3.27 * 10^{-2}$ with $\mu_0$ the %% what??
+    \item $t_{ox} = 4.05 * 10^{-9}$ with $t_{ox}$ the oxide thickness
+    \item $L_{int} = 3.96 * 10^{-8}$ with $L_{int}$ the channel length offset parameter without bias effects
+\end{itemize}
+
+The two voltage sources in figure \ref{fig:Sim_Circ} are there to set the drain, gate and source voltages. With the left one being $V_{GS}$, the gate source voltage and the right one being $V_{DS}$, the drain source voltage.\\
+
+\begin{figure}[h!]
+    \centering
+        \includesvg[width=0.2\textwidth]{images/circuit.svg}
+    \caption{Circuit diagram of the simulated circuit}
+    \label{fig:Sim_Circ}
+\end{figure}
+
+\section{$V_{to}$ extraction method}
+
+\section{K extraction method}
+
+\section{$\lambda$ extraction method}
+
+\section{$V_{Dsat}$ extraction method}
+
+\section{Spice model V. Unified model}

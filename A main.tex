@@ -1,0 +1,87 @@
+\documentclass[a4paper]{report}
+
+%%%%%%%% CREATE DOCUMENT STRUCTURE %%%%%%%%
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{subfig}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{sectsty}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{titling} 
+\usepackage{blindtext}
+\usepackage{svg}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+\definecolor{darkgreen}{rgb}{0.0, 0.4, 0.0}
+
+%%%%%%%% DOCUMENT %%%%%%%%
+\begin{document}
+
+%%%% Title Page
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 							% horizontal line and its thickness
+\center 
+ 
+% University
+\textsc{\LARGE Delft University of Technology}\\[1cm]
+
+% Document info
+\textsc{\Large Integrated Circuits}\\[0.2cm]
+\textsc{\large EE2C11}\\[1cm] 										% Course Code
+\HRule \\[0.8cm]
+{ \huge \bfseries Course lab for EE2C11 at TU Delft}\\[0.7cm]								% Assignment
+\HRule \\[2cm]
+\large
+\emph{Authors:}\\
+Mathieu Demeestere (5693691)\\
+Wiktor Tomaneki (5625173)\\[1.5cm]
+% Author info
+{\large \today}\\[5cm]
+\includegraphics[width=0.6\textwidth]{images/TU_delft_logo.jpg}\\[1cm] 	% University logo
+\vfill 
+\end{titlepage}
+
+\begin{abstract}
+Your abstract.
+\end{abstract}
+
+%%%% SECTIONS
+\include{B intro}
+%% Body
+\include{C Body/Methodology}
+\include{C Body/VTO Justification}
+\include{C Body/Variablility in design}
+%% Outro
+\include{D Outro/discussion}
+\include{D Outro/conclusion}
+%% appendix
+\include{E Appendices/Appendix}
+
+%%%%%%%% EXTRA TIPS %%%%%%%%
+%% hou deze structuur aan voor afbeeldingen
+%%\begin{figure}[H]
+%%\includegraphics[]{Pendulum.jpg}
+%%\caption{Sketch of the pendulum}
+%%\label{fig:pendulum}
+%%\end{figure}
+
+
+%%\newpage
+\bibliography{main}
+\bibliographystyle{IEEEtran}
+\end{document}

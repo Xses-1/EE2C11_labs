@@ -1,0 +1,12 @@
+\section{Variability in Design}
+Not every transistor is created equal. Parameters change not only from technology to technology, but from wafer to wafer and even from single transistor to transistor. This due to non-ideal conditions in production, material or even source voltages and operating temperature.\\
+
+A designer cannot assume that every transistor will behave the same. Threshold voltages, drain currents and gate capacitances will change, changing for example the time a gate takes to turn on or off. If not taken into account, transistors can still be in a transitory state when the next clock-cycle comes along and as such there is no way to discern what state it was in before.\\
+
+However when designing for the worst case scenario a designer will end up with a circuit that is over-designed and can handle way more than what was asked for. This will make the design bigger and as such more expensive to manufacture. This will make circuit noncompetitive and it is often better to accept a percentage of losses than have a perfect yield.\\
+
+These variations will exist in a normal distribution on the production line. As such a designer can choose which level of variation they are comfortable with and choose which parameters to design for. That way it can be chosen what percentage of failed chips is more economical than designing for more variability. That means that in high volume production inevitably some chips will fail, or work at lower frequencies than the the design frequency, or have parts that don't work to standard etc... This, however, is often used as an advantage instead of a disadvantage.\\
+
+Smaller process nodes introduce more variability in systems, since the resolution of production machinery has to keep increasing. The same nanometer difference in production now accounts for a bigger percentile difference in the actual product and as such more variance exists in production nodes. Designing for this modern chip designers make the under performing, defective chips still available for purchase. These chips are marketed as lower core count, lower performance chips but are effectively the same. Recently both Intel and AMD have switched to chiplett designs. Cores are now each fabbed individually and then linked together. This allows for smaller footprints on wafers which allows higher yields per wafer and for easier reuse of (defective) cores for lower performance models. % source
+
+%TODO cont (384 words - > at least 400) 
