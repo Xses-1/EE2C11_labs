@@ -83,4 +83,4 @@ def makeplot(filename):
 
 
 if __name__ == '__main__':
-    makeplot("nmosid.raw")
+    makeplot("EE2C11_labs\Draft1.raw")
