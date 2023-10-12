@@ -103,7 +103,7 @@ def findVal():
         # Vt = x when y = 0
         # Vt = -y1/slope + x1
 
-        vt = -y1/slope + x1
+        vt = -y1/Slope + x1
         Vt.append(vt) 
 
         #---------------------------------------------------------------- Vt Found
@@ -113,11 +113,11 @@ def findVal():
         K.append((2*(Slope**2))/((x1-Vt[i-1])**2))
 
         #Finding Lamda line
-        x1 = Vds[i-1][50]
-        x2 = Vds[i][50]
+        x1 = Vds[i-1]
+        x2 = Vds[i]
 
-        y1 = Id[i-1][50]
-        y2 = Id[i][50]
+        y1 = Id[i-1][10]
+        y2 = Id[i][10]
 
         slope = (y2 - y1) / (x2 - x1)
 
