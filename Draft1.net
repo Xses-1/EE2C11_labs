@@ -6,7 +6,7 @@ M1 N001 N002 0 0 NMOS l=180e-9 w=180e-8
 .model PMOS PMOS
 .lib C:\users\xses\My Documents\LTspiceXVII\lib\cmp\standard.mos
 .lib ptm180.mod
-.step VGS 0.6 1.8 0.3
-.dc VDS 0 1.8 0.02
+.step VDS 0.6 1.8 0.3
+.dc VGS 0 1.8 0.02
 .backanno
 .end
