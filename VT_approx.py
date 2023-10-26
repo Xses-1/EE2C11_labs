@@ -77,7 +77,7 @@ def findVal():
     K = []
     K2 = []
     lamarray = []
-    for i in range(1, len(Vds)) :
+    for i in range(2, len(Vds)) :
 
         ################################
         #Find the Treshold Voltage
@@ -92,7 +92,11 @@ def findVal():
         #slope of last two coordinates
         #y2-y1/x2-x1
 
-        y1 = np.sqrt(Id[i][25])   
+        print(len(Id[i]))
+        try:
+            y1 = np.sqrt(Id[i][25])  
+        except:
+            break 
         y2 = np.sqrt(Id[i][25 + 5])  
 
         x1 = Vgs[i][25]
@@ -110,30 +114,30 @@ def findVal():
 
         
 
-        K.append((2*(Slope**2))/((x1-Vt[i-1])**2))
-
-        #Finding Lamda line
-        x1 = Vds[i-1]
-        x2 = Vds[i]
-
-        y1 = Id[i-1][10]
-        y2 = Id[i][10]
-
-        slope = (y2 - y1) / (x2 - x1)
-
-        # lamda = -1/vds when id = 0
-
-        vdslam = (-y1/slope) + x1
-
-        lamarray.append(-1/vdslam)
-
-        #K2: Id = idprime when vds = 0 
-
-        idprime = (-slope * x1) + y1
-
-        K2.append((2*idprime)/((Vgs[i]-Vt[i-1])**2))
-
-    pprint(K2)
+       # K.append((2*(Slope**2))/((x1-Vt[i-1])**2))
+#
+       # #Finding Lamda line
+       # x1 = Vds[i-1]
+       # x2 = Vds[i]
+#
+       # y1 = Id[i-1][10]
+       # y2 = Id[i][10]
+#
+       # slope = (y2 - y1) / (x2 - x1)
+#
+       # # lamda = -1/vds when id = 0
+#
+       # vdslam = (-y1/slope) + x1
+#
+       # lamarray.append(-1/vdslam)
+#
+       # #K2: Id = idprime when vds = 0 
+#
+       # idprime = (-slope * x1) + y1
+#
+       # K2.append((2*idprime)/((Vgs[i]-Vt[i-1])**2))
+#
+    pprint(Vt)
     vt = np.average(Vt)
     k = np.average(K)
     k2 = np.average(K2)
